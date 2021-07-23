@@ -1,0 +1,27 @@
+import java.util.*;
+class salary
+{
+public static void main(String[]args)
+{
+Hashtable<Integer,Integer> x=new Hashtable<Integer,Integer>();
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter value");
+int n=sc.nextInt();
+System.out.println("Enter elements");
+for(int i=0;i<=n;i++)
+{
+int key=sc.nextInt();
+int value=sc.nextInt();
+x.put(key,value);
+}
+System.out.println("Enter key");
+int k=sc.nextInt();
+if(x.containsKey(k))
+{
+int s=x.get(k)+5000;
+x.put(k,s);
+System.out.println(x);
+}
+else
+System.out.println("not found");
+}}
